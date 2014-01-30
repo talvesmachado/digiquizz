@@ -1,0 +1,19 @@
+body { background: #e9e2d0; font-family: 'Oswald', sans-serif }
+#main-view { }
+#question-wrapper { width:100%; text-align: center; height:100%; position: relative; font-weight: 300  }
+#question-box { width: 100%; text-align: center; font-size: 3em; font-weight: 300 }
+#timer-box { width: 146px; height: 300px;font-size: 4em; display: inline-block; }
+#timer { width: 143px; height:146px }
+#avatar-wrapper { background-color:#bceddc; width: 100%; height: 130px; position: fixed; bottom: 0; left:0; padding:20px; }
+#avatar-label {font-size:1.9em; float: left; display: inline-block; }
+#avatar-box { float: left; display: inline-block; width: auto; }
+#loader { fill: #d0e9d4 }
+#border { fill: #ffffff }
+/*  Players  */
+ul#player-list { padding:0; margin: 0 }
+#player-list li {list-style: none; display: block; float:left; padding: 0 10px; margin: 0 }
+.avatar-wrapper { text-align: center; text-transform: uppercase;}
+.avatar-box {background-color: #ffffff; width: 70px; height: 70px; padding: 10px }
+.avatar-box .background { background-color: #98c3ec; width: 100%; height: 100%; position: relative;}
+.avatar-box .background .background-wrapper  svg {position: absolute; width:100%; height: 100%; top: 0; left: 0}
+.player-name { display: block; clear: both; background-color: #ffffff; padding: 3px 0; margin-top: 10px}
