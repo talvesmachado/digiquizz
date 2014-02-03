@@ -59,7 +59,7 @@ define([
         {
             var svgCible = "#svg-avatar-"+this.model.get('id');
             this.svg =  Snap(svgCible);
-            Snap.load("../../images/"+"icon_"+this.model.get('svg')+"/icon_"+this.model.get('svg')+".svg", function (f) {
+            Snap.load(require.toUrl("./../images/"+"icon_"+this.model.get('svg')+"/icon_"+this.model.get('svg')+".svg"), function (f) {
 
                 var g = f.select("g");
                 //console.log(this);

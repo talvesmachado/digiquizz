@@ -28,7 +28,7 @@ require([
 ], function (Backbone, QuizzdeskRouter) {
 
     window.myApplication = null;
-
+    
     $(document).ready(function () {
 
         myApplication = new QuizzdeskRouter();
