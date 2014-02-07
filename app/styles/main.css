@@ -1,8 +1,8 @@
-body { background: #e9e2d0; font-family: 'Oswald', sans-serif }
+body { background: #e9e2d0; font-family: 'Oswald', sans-serif; margin: 0; padding: 0 }
 #main-view { }
 #question-wrapper { width:100%; text-align: center; height:100%; position: relative; font-weight: 300  }
 #question-box { width: 100%; text-align: center; font-size: 3em; font-weight: 300 }
-#timer-box { width: 146px; height: 300px;font-size: 4em; display: inline-block; }
+#timer-box { width: 146px; height: 300px;font-size: 4em; display: inline-block; padding-top: 50px; }
 #timer { width: 143px; height:146px }
 #avatar-wrapper { background-color:#bceddc; width: 100%; height: 130px; position: fixed; bottom: 0; left:0; padding:20px; }
 #avatar-label {font-size:1.9em; float: left; display: inline-block; }
@@ -17,3 +17,88 @@ ul#player-list { padding:0; margin: 0 }
 .avatar-box .background { background-color: #98c3ec; width: 100%; height: 100%; position: relative;}
 .avatar-box .background .background-wrapper  svg {position: absolute; width:100%; height: 100%; top: 0; left: 0}
 .player-name { display: block; clear: both; background-color: #ffffff; padding: 3px 0; margin-top: 10px}
+
+
+/* MOBILE */
+.mobile-body {background: url(../images/mobile-pattern.png) repeat 0 0 #e9e2d0}
+#mobile-app-wrapper { width: 100%; height: 100%; clear: both; overflow: hidden; text-align: center; }
+#mobile-app-wrapper .svgwrapper { position: relative; width: 100px; height: 100px; margin: 0 auto;}
+#mobile-app-wrapper #mobile-init-svg { position: absolute;  top:0; left: 0; width: 100%; height: 100%}
+#mobile-app-wrapper .form-wrapper { padding: 0 20px}
+#mobile-app-wrapper label { font-size: 20px}
+#submit-bt { width: 100%}
+.pure-form input[type=text], .pure-form input[type=password], .pure-form input[type=email], .pure-form input[type=url], .pure-form input[type=date], .pure-form input[type=month], .pure-form input[type=time], .pure-form input[type=datetime], .pure-form input[type=datetime-local], .pure-form input[type=week], .pure-form input[type=number], .pure-form input[type=search], .pure-form input[type=tel], .pure-form input[type=color], .pure-form select, .pure-form textarea { border-radius: 0}
+#avatar-list {
+	height: 90%;
+	display: block;
+	position: relative;
+	width: 100%;
+	margin-left: 40px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+#avatar-list li {
+	width: 70%;
+height: 90%;
+padding-top: 20px;
+list-style: none;
+display: inline-block;
+margin: 0;
+text-align: center;
+position: absolute;
+cursor: pointer;
+}
+.back-avatar { background: url(../images/back-avatar.png) no-repeat top center; background-size:cover } 
+.svg-item { width: 100%; height: 100%; position: absolute; top: 0; left: 0 }
+#avatar-list svg { width: 100% !important; height: 100% !important }
+#mobile-app-wrapper p.swipe {
+width: 75%;
+margin: auto;
+text-align: center;
+font-size: 1.5em;
+margin-top: 20px;
+}
+.answer-bloc { display: block; float: left; position: relative;border:1px solid #000000;}
+.answer-bloc-content { position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: 50%;
+		height: 30%;
+		margin: auto;
+		text-align: center;
+		color:#ffffff;
+		font-weight: 300;
+		font-size: 1.5em;
+	}
+.answer-bloc-good h4, .answer-bloc-bad h4{
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: 50%;
+		height: 30%;
+		margin: auto;
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: bold;
+		color:#ffffff;
+		font-size: 1.5em;
+}
+.border-anim {position: absolute; border-color: #ffffff}
+.answer-bloc-good , .answer-bloc-bad {
+	position: fixed;
+	top:0;
+	left: 0; 
+	width: 100%;
+	height:100%;
+	text-align: center;
+	font-size: 3em;
+	background-color: #d9eec3
+}
+.answer-bloc-bad {
+	background-color: #e29d9d
+}
+

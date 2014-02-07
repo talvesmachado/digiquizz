@@ -6,25 +6,26 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>DIGIQUIZZ</title>
-        <meta name="description" content="DIGIQUIZZ">
+        <title>interface mobile</title>
+        <meta name="description" content="interface mobile">
         <meta name="viewport" content="width=device-width">
         <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
         <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
         <!-- build:js scripts/vendor/modernizr.js -->
         <script src="bower_components/modernizr/modernizr.js"></script>
         <!-- endbuild -->
-        <!-- build:js scripts/questions.js -->
-        <script src="scripts/questions.js"></script>
+        <!-- build:js scripts/vendor/quo.js -->
+        <script src="scripts/vendor/quo.js"></script>
         <!-- endbuild -->
     </head>
-    <body>
+    <body class="mobile-body">
         <!--[if lt IE 10]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div id="app-wrapper">
+        <div id="mobile-app-wrapper">
 
         </div>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -36,9 +37,9 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X');ga('send','pageview');
         </script>
-        <script src="http://192.168.5.44:1337/socket.io/socket.io.js"></script> 
-        <!-- build:js scripts/main.js -->
-        <script data-main="scripts/main" src="bower_components/requirejs/require.js"></script>
+        <script src="http://192.168.5.44:1337/socket.io/socket.io.js"></script>
+        <!-- build:js scripts/mobile.js -->
+        <script data-main="scripts/mobile" src="bower_components/requirejs/require.js"></script>
         <!-- endbuild -->
 </body>
 </html>
