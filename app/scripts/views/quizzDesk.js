@@ -22,7 +22,7 @@ define([
 		template: JST['app/scripts/templates/quizzDesk.ejs'],
 		initialize: function() {
 			var that = this;
-			this.socket = io.connect('"http://192.168.5.44:1337');
+			this.socket = io.connect('"http://192.168.0.55:1337');
 			this.socket.emit('loginMaster');
 			this.socket.on('newPlayer', function(user) {
 				that.avatarView.addAvatarModel(user.id, user.username, user.avatar, user.email);

@@ -22,7 +22,7 @@ define([
 			'submit #email-form': 'toAvatarChoose'
 		},
 		initialize: function() {
-			this.socket = io.connect('"http://192.168.5.44:1337');
+			this.socket = io.connect('"http://192.168.0.55:1337');
 			//	this.socket.emit('loginPlayer');
 			$(window).bind("resize.app", _.bind(this.resize, this));
 			this.svgArray = new Array('29715', '29779', '29882', '29926', '29940', '30018', '30055', '30069');
